@@ -11,6 +11,6 @@ def test_first():
     chrome.get("https://yandex.ru")
     assert "Яндекс" in chrome.title
     
-    pass
+# tetst
 
 
