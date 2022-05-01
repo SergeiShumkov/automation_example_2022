@@ -1,16 +1,13 @@
-from selenium import webdriver
 
-options = webdriver.ChromeOptions()
-options.add_experimental_option('excludeSwitches', ['enable-logging'])
+# options = webdriver.ChromeOptions()
+# options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
 
-def test_first():
-    # chrome = webdriver.Chrome(executable_path="D:\Automation\Drivers\chromedriver.exe")
-
-    chrome = webdriver.Chrome(options=options)
-    chrome.get("https://yandex.ru")
-    assert "Яндекс" in chrome.title
+def test_first(browser):
+    # chrome = webdriver.Chrome(options=options)
+    browser.get("https://www.u-mama.ru")
+    assert "о" in browser.title
     
-# tetst
+
 
 
